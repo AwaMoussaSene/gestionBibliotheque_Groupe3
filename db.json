@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "nom": "Administrateur",
+      "prenom": "Système"
+    },
+    {
+      "id": 2,
+      "username": "bibliothecaire",
+      "password": "biblio123",
+      "role": "bibliothecaire",
+      "nom": "Dupont",
+      "prenom": "Marie"
+    },
+    {
+      "id": 3,
+      "username": "abonne",
+      "password": "abonne123",
+      "role": "abonne",
+      "nom": "Martin",
+      "prenom": "Jean"
+    }
+  ],
+  "livres": [
+    {
+      "id": 1,
+      "titre": "Le Petit Prince",
+      "auteur": "Antoine de Saint-Exupéry",
+      "categorie": "Roman",
+      "isbn": "9782070612758",
+      "anneePublication": 1943,
+      "disponible": true
+    },
+    {
+      "id": 2,
+      "titre": "1984",
+      "auteur": "George Orwell",
+      "categorie": "Science-fiction",
+      "isbn": "9782070368228",
+      "anneePublication": 1949,
+      "disponible": true
+    },
+    {
+      "id": 3,
+      "titre": "Les Misérables",
+      "auteur": "Victor Hugo",
+      "categorie": "Roman historique",
+      "isbn": "9782253096344",
+      "anneePublication": 1862,
+      "disponible": false
+    },
+    {
+      "id": 4,
+      "titre": "L'Étranger",
+      "auteur": "Albert Camus",
+      "categorie": "Roman",
+      "isbn": "9782070360024",
+      "anneePublication": 1942,
+      "disponible": true
+    },
+    {
+      "id": 5,
+      "titre": "Harry Potter à l'école des sorciers",
+      "auteur": "J.K. Rowling",
+      "categorie": "Fantasy",
+      "isbn": "9782070624520",
+      "anneePublication": 1997,
+      "disponible": true
+    },
+    {
+      "id": 6,
+      "titre": "Antigone",
+      "auteur": "Jean Anouilh",
+      "categorie": "Théâtre",
+      "isbn": "9782710381419",
+      "anneePublication": 1944,
+      "disponible": false
+    }
+  ],
+  "prets": [
+    {
+      "id": 1,
+      "livreId": 3,
+      "userId": 3,
+      "dateEmprunt": "2023-10-15",
+      "dateRetourPrevue": "2023-11-15",
+      "dateRetourEffective": null,
+      "statut": "en_cours"
+    },
+    {
+      "id": 2,
+      "livreId": 6,
+      "userId": 3,
+      "dateEmprunt": "2023-10-20",
+      "dateRetourPrevue": "2023-11-20",
+      "dateRetourEffective": null,
+      "statut": "en_cours"
+    }
+  ],
+  "demandes": [
+    {
+      "id": 1,
+      "livreId": 4,
+      "userId": 3,
+      "dateReservation": "2023-10-25",
+      "statut": "en_attente"
+    }
+  ]
+} 
