@@ -20,7 +20,7 @@ class RouterService {
       }
     });
   }
-
+// 
   register(path, component, requiresAuth = false, allowedRoles = []) {
     this.routes[path] = component;
     
