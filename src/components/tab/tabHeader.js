@@ -1,3 +1,8 @@
+import { NavBar } from './navBar.js';
+import { SideBar } from './siteBar.js';
+import { authService } from '../../services/authService.js';
+
+
 export function tabHeaders(columns = []) {
     return `
       <thead>

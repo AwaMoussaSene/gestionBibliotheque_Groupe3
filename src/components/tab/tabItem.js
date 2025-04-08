@@ -1,3 +1,8 @@
+
+import { NavBar } from './navBar.js';
+import { SideBar } from './siteBar.js';
+import { authService } from '../../services/authService.js';
+
 export function tabItem(cells = [], options = {}) {
     return `
       <tr class="border-b border-gray-200 ${options.class || ''}">
