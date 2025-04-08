@@ -2,7 +2,7 @@ import { authService } from '../../services/authService.js';
 
 export function SideBar() {
   const currentUser = authService.getCurrentUser();
-  
+   
   if (!currentUser) {
     return {
       html: '',
