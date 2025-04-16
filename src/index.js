@@ -3,6 +3,7 @@ import { loginPage } from './pages/loginPage.js';
 import { adminDashboardPage, bibliothecaireDashboardPage } from './pages/dashboardPage.js';
 import { cataloguePage } from './pages/cataloguePage.js';
 import { authService } from './services/authService.js';
+import {test} from "./pages/test";
 
 // Initialisation du routeur
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .register('/admin', adminDashboardPage, true, ['admin'])
     .register('/bibliothecaire', bibliothecaireDashboardPage, true, ['bibliothecaire'])
     .register('/catalogue', cataloguePage)
+    .register('/test', test)
     .register('/', (container) => {
       // Redirection basée sur l'authentification et le rôle
       const currentUser = authService.getCurrentUser();
